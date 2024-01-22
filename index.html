@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>theme test</title>
+</head>
+<!--  assign the first theme to the body -->
+
+<body class="dark">
+    <!-- input the toggle to the btn onclick -->
+
+    <!-- Rounded switch --><span>🌙</span>
+    <label class="switch">
+        <input type="checkbox" onclick="toggleBtn()">
+        <span class="slider round"></span>
+    </label><span>☀️</span>
+    <h1>H1</h1>
+    <p>paragraph</p>
+
+
+    <!-- https://medium.com/@amyabafor013/how-to-create-different-color-themes-with-css-and-javascript-d2ff1e66ce08 -->
+    <script>
+        // toggle between themes, themes contain the variables for colors
+        function toggleBtn() {
+            document.body.classList.toggle("bright");
+        }
+    </script>
+</body>
+
+</html>
